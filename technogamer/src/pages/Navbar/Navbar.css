@@ -1,0 +1,41 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0D0D0D;
+    padding: 0rem 2.5rem;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    color: #F5F5F5;
+    font-family: "Saira", sans-serif;
+}
+
+nav .logo img {
+    width: 49px;
+    height: auto;
+}
+
+nav .enlaces ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 5.3rem;
+    align-items: center;
+    font-family: "Saira", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #F5F5F5;
+    list-style: none;
+    cursor: pointer;
+}
+
+nav .icons img {
+    width: 30px;
+    height: auto;
+    margin: 0.8rem;
+    cursor: pointer;
+}
