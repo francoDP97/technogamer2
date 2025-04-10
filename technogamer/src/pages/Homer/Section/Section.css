@@ -1,7 +1,8 @@
 .productos {
     margin: auto;
-    justify-content: center;
+    justify-content: space-evenly;
     border: none;
+    margin-top: 2.3rem;
 }
 
 .productos li {
@@ -10,16 +11,21 @@
 
 .productos li button:hover {
     border: none;
-    color: red;
+    color: #878787;
 }
 
 .productos li .nav-link.active {
     background-color: transparent;
-    border-top: 1px solid red;
+    border-bottom: 2px solid #00A3FF;
+    color: #F5F5F5;
 
 }
 
 .productos .nav-link {
     border: none;
+    color: #F5F5F5;
+    font-family: "Saira", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
 
 }

@@ -1,13 +1,15 @@
-import React from "react";
+import { useState } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
 import './Section.css'
 function Section() {
+    const [key, setKey] = useState('Categorías de productos');
     return (
         <Tabs
-            defaultActiveKey="profile"
-            id="uncontrolled-tab-example"
+            id="controlled-tab-example"
+            activeKey={key}
+            onSelect={(k) => setKey(k)}
             className="productos"
         >
             <Tab eventKey="Categorías de productos" title="Categorías de productos">
