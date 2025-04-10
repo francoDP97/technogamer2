@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from './pages/Navbar/Navbar.jsx'
 import Homer from './pages/Homer/Homer.jsx'
+import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)

@@ -1,0 +1,25 @@
+.productos {
+    margin: auto;
+    justify-content: center;
+    border: none;
+}
+
+.productos li {
+    border: none;
+}
+
+.productos li button:hover {
+    border: none;
+    color: red;
+}
+
+.productos li .nav-link.active {
+    background-color: transparent;
+    border-top: 1px solid red;
+
+}
+
+.productos .nav-link {
+    border: none;
+
+}
