@@ -1,9 +1,19 @@
-nav {
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.navabar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #0D0D0D;
-    padding: 0rem 2.5rem;
+    padding: 1.3rem 2.5rem;
 }
 
 nav .logo {
@@ -11,6 +21,7 @@ nav .logo {
     align-items: center;
     color: #F5F5F5;
     font-family: "Saira", sans-serif;
+    text-transform: uppercase;
 }
 
 nav .logo img {
@@ -18,7 +29,26 @@ nav .logo img {
     height: auto;
 }
 
-nav .enlaces ul {
+.enlaces {
+    gap: 1rem;
+}
+
+@media (min-width: 1000px) {
+
+    .navbar_enalace_iconos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .enlaces {
+        margin: auto;
+        gap: 3.5rem;
+    }
+}
+
+.enlaces .enlace {
+    gap: 1rem;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -31,11 +61,14 @@ nav .enlaces ul {
     color: #F5F5F5;
     list-style: none;
     cursor: pointer;
+    border-bottom: 2.3px solid #0D0D0D;
 }
 
-nav .icons img {
+.enlace:hover {
+    border-bottom: 2.3px solid #008CFF;
+}
+
+.iconos img {
     width: 30px;
     height: auto;
-    margin: 0.8rem;
-    cursor: pointer;
 }
