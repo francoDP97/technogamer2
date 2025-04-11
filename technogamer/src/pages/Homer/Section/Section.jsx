@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-
+import Productos from "./Productos/Productos.jsx"
 import './Section.css'
 function Section() {
     const [key, setKey] = useState('Categorías de productos');
@@ -13,7 +13,7 @@ function Section() {
             className="productos"
         >
             <Tab eventKey="Categorías de productos" title="Categorías de productos">
-                Categorías de productos
+                <Productos />
             </Tab>
             <Tab eventKey="Productos descados" title="Productos descados">
                 Productos descados
