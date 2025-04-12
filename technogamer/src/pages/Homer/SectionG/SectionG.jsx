@@ -8,7 +8,7 @@ import ArticuloImgTres from '../../../assets/img/Articulos/Articulo_3.png';
 import './SectionG.css';
 
 function SectionG() {
-    const [key, setKey] = useState('Categorías de productos');
+    const [key, setKey] = useState('ARTICULO DESTACADOS');
 
     const articulos = [
         {
