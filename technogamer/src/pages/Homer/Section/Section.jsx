@@ -15,8 +15,8 @@ function Section() {
             <Tab eventKey="Categorías de productos" title="Categorías de productos">
                 <Productos />
             </Tab>
-            <Tab eventKey="Productos descados" title="Productos descados">
-                Productos descados
+            <Tab eventKey="Productos destacados" title="Productos destacados">
+                Productos destacados
             </Tab>
         </Tabs>
     );
