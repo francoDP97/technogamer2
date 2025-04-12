@@ -1,5 +1,6 @@
 import React from "react";
 import Section from "./Section/Section";
+import SectionG from "./SectionG/SectionG";
 import './Homer.css';
 function Homer() {
     return (
@@ -11,6 +12,7 @@ function Homer() {
                 </div>
             </div>
             <Section />
+            <SectionG />
         </>
     );
 }

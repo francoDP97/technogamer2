@@ -10,7 +10,7 @@ function Section() {
             id="controlled-tab-example"
             activeKey={key}
             onSelect={(k) => setKey(k)}
-            className="productos"
+            className="columnas"
         >
             <Tab eventKey="Categorías de productos" title="Categorías de productos">
                 <Productos />

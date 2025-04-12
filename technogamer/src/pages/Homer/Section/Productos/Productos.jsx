@@ -14,9 +14,9 @@ import Refrigadores from './../../../../assets/img/Refrigadores.jpg'
 function Productos() {
     return (
         <>
-            {/* Stack the columns on mobile by making one full-width and the other half-width */}
             <Row>
                 <Col xs={6} md={6}>
+                    {/*poner el link */}
                     <div className='producto'>
                         <div className='imgProducto'>
                             <img src={Teclado} alt="Teclado" />
@@ -28,6 +28,7 @@ function Productos() {
                     </div>
                     <Row >
                         <Col xs={6} md={6} className='ps-0'>
+                            {/*poner el link */}
                             <div className='producto_col2'>
                                 <div className='imgProducto'>
                                     <img src={Auriculares} alt="Auriculares" />
@@ -39,6 +40,7 @@ function Productos() {
                             </div>
                         </Col>
                         <Col xs={6} md={6} className='pe-0'>
+                            {/*poner el link */}
                             <div className='producto_col2'>
                                 <div className='imgProducto'>
                                     <img src={Fuente} alt="Fuente" />
@@ -50,6 +52,7 @@ function Productos() {
                             </div>
                         </Col>
                     </Row>
+                    {/*poner el link */}
                     <div className='producto_col2'>
                         <div className='imgProducto'>
                             <img src={Gabinete} alt="Gabinete" />
@@ -63,6 +66,7 @@ function Productos() {
                 <Col xs={6} md={6}>
                     <Row >
                         <Col xs={6} md={6} className='ps-0'>
+                            {/*poner el link */}
                             <div className='producto_col2'>
                                 <div className='imgProducto'>
                                     <img src={Sdd} alt="Sdd" />
@@ -74,6 +78,7 @@ function Productos() {
                             </div>
                         </Col>
                         <Col xs={6} md={6} className='pe-0'>
+                            {/*poner el link */}
                             <div className='producto_col2'>
                                 <div className='imgProducto'>
                                     <img src={Memoria} alt="Memoria" />
@@ -85,6 +90,7 @@ function Productos() {
                             </div>
                         </Col>
                     </Row>
+                    {/*poner el link */}
                     <div className='producto'>
                         <div className='imgProducto'>
                             <img src={Mueble} alt="Mueble" />
@@ -96,6 +102,7 @@ function Productos() {
                     </div>
                     <Row >
                         <Col xs={6} md={6} className='ps-0'>
+                            {/*poner el link */}
                             <div className='producto_col2'>
                                 <div className='imgProducto'>
                                     <img src={Grafica} alt="Grafica" />
@@ -107,6 +114,7 @@ function Productos() {
                             </div>
                         </Col>
                         <Col xs={6} md={6} className='pe-0'>
+                            {/*poner el link */}
                             <div className='producto_col2'>
                                 <div className='imgProducto'>
                                     <img src={Refrigadores} alt="Refrigadores" />
