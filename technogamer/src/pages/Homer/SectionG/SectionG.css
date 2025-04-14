@@ -1,0 +1,18 @@
+h2 {
+    font-family: "Saira", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #F5F5F5;
+    font-size: 64px;
+    margin-top: 3rem;
+}
+
+.articulos .nav-item {
+    width: 50%;
+}
+
+.articulos .nav-item .nav-link {
+    font-weight: 200;
+    width: 100%;
+    border-bottom: 2px solid #0D0D0D;
+}

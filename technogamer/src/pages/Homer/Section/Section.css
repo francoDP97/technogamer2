@@ -1,0 +1,31 @@
+.columnas {
+    margin: auto;
+    justify-content: space-evenly;
+    border: none;
+    margin: 2.3rem 0;
+}
+
+.columnas li {
+    border: none;
+}
+
+.columnas li button:hover {
+    border: none;
+    color: #878787;
+}
+
+.columnas li .nav-link.active {
+    background-color: transparent;
+    border-bottom: 2px solid #00A3FF;
+    color: #F5F5F5;
+
+}
+
+.columnas .nav-link {
+    border: none;
+    color: #F5F5F5;
+    font-family: "Saira", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+
+}
