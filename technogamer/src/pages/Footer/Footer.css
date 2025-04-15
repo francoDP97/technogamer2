@@ -58,6 +58,7 @@ footer .enlaces {
     font-size: 24px;
 }
 
+
 footer .enlaces .sub_enlaces {
     margin: 1rem 0;
     font-size: 16px;
@@ -66,4 +67,8 @@ footer .enlaces .sub_enlaces {
     flex-direction: column;
     gap: 0.4rem;
 
+}
+
+.sub_enlaces li:hover {
+    color: #1F1F1F;
 }
