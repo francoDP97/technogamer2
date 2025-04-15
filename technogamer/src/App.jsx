@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import Navbar from './pages/Navbar/Navbar.jsx'
-import Homer from './pages/Homer/Homer.jsx'
-import './App.css'
+//import Navbar from './pages/Navbar/Navbar.jsx'
+//import Homer from './pages/Homer/Homer.jsx'
+//import './App.css'
+import ItemListContainer from './pages/CatalogoProducto/ItemListContainer/ItemListContainer.jsx'
+import ItemDetailConteiner from './pages/CatalogoProducto/ItemDetailConteiner/ItemDetailConteiner.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <Navbar />
-      <Homer />
+      {/*<Navbar />
+      <Homer />*/}
+      {/*<ItemListContainer/>*/}
+      <ItemDetailConteiner itemId={2}/>
     </>
   )
 }
