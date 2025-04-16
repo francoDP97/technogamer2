@@ -1,5 +1,6 @@
 import React from 'react'
 import './item.css'
+import {Link} from "react-router-dom"
 
 function Item({producto}) {
   return (
@@ -8,9 +9,9 @@ function Item({producto}) {
         <div>
             <h3>{producto.name}</h3>
             <p>Precio: ${producto.price}</p>
-            <p>Categoria: {producto.category}</p>
-            <p>Descripcion: {producto.description}</p>
-            <a href={`./Item/${producto.id}`}>ver mas</a>
+           {/* <p>Categoria: {producto.category}</p>
+            <p>Descripcion: {producto.description}</p>*/}
+            <Link to={`/item/${producto.id}`}>Ver mas</Link>
         </div>
     </div>
   )

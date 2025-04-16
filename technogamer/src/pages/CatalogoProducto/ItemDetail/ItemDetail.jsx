@@ -8,7 +8,8 @@ function ItemDetail({item}) {
             <h3>{item.name}</h3>
             <p>Precio: ${item.price}</p>
             <p>Categoria: {item.category}</p>
-            <p>Descripcion: {item.description}</p>            
+            <p>Descripcion: {item.description}</p>
+            <p>Stock: {item.stock}</p>            
         </div>
     </div>
   )
