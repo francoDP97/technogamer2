@@ -5,6 +5,7 @@ import ItemList from '../ItemList/ItemList';
 function ItemListContainer() 
 {
     const [productos, setProductos] = useState([]);
+
     useEffect ( () => 
     {
         pedirProductos()
@@ -15,8 +16,7 @@ function ItemListContainer()
     }, [])
   
   return (
-    <div>
-        
+    <div>        
         <ItemList productos = {productos}/>
     </div>
   )
