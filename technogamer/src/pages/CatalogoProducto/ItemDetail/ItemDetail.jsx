@@ -1,14 +1,18 @@
 import React from 'react'
 import { Card, Container, Button } from 'react-bootstrap'
+import Category from '../Categoryfilter/Category'
+import '../ItemListContainer/style.css'
 
 function ItemDetail({item}) {
   return (
     <>
     <h1 className="text-center">Detalle de Producto</h1>
     <hr/>  
+    <div className='grid-layout'>
+    <Category/>
 
-    <Container className='d-flex justify-content-center'>
-
+  
+    <Container className='d-flex justify-content-center'>  
     <Card style={{ width: '18rem' }}>
         <Card.Img variant='top' src={item.image} />
         <Card.Body>
@@ -21,6 +25,7 @@ function ItemDetail({item}) {
         </Card.Body>
     </Card>
     </Container>    
+    </div>
     </>
   )
 }

@@ -2,13 +2,13 @@ import { useState } from "react";
 import Item from "../Item/Item"
 import { Container, Row, Col } from "react-bootstrap";
 
-function ItemList ({productos}) {
+function ItemList ({productos, titulo}) {
     const [busqueda, setBusqueda] = useState("")
   return ( 
   <>
 
     <Container className="my-4">
-        <h1 className="text-center">Catalogo de Productos</h1>
+        <h1 className="text-center">{titulo}</h1>
         <hr/>
         <input
           type="text"
@@ -29,7 +29,7 @@ function ItemList ({productos}) {
                 )
             })          
         }
-                      
+
         </Row>
     </Container>
     </>
