@@ -1,0 +1,74 @@
+a {
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+footer {
+    padding: 4rem 3rem;
+    background-color: #0D0D0D;
+    color: #F5F5F5;
+    font-family: "Saira", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer .logo {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+footer .redes {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .redes a {
+    width: 40px;
+    height: 40px;
+}
+
+footer .redes a img {
+    width: 100%;
+    height: 100%;
+    padding: 0.3rem;
+    object-fit: cover;
+}
+
+footer .enlaces,
+.sub_enlaces {
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+footer .enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 24px;
+}
+
+
+footer .enlaces .sub_enlaces {
+    margin: 1rem 0;
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+}
+
+.sub_enlaces li:hover {
+    color: #1F1F1F;
+}

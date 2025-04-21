@@ -1,13 +1,13 @@
 import Navbar from './pages/Navbar/Navbar.jsx'
 import Homer from './pages/Homer/Homer.jsx'
-//import './App.css'
+import Footer from './pages/Footer/Footer.jsx'
 import ItemListContainer from './pages/CatalogoProducto/ItemListContainer/ItemListContainer.jsx'
 import ItemDetailConteiner from './pages/CatalogoProducto/ItemDetailConteiner/ItemDetailConteiner.jsx'
-import {BrowserRouter, Route, Routes} from "react-router-dom"
+import {BrowserRouter, Routes, Route } from 'react-router-dom'
+import './App.css'
 
 function App() {
   return (
-    <div>
     <BrowserRouter>
       <Navbar/>
       <Routes>
@@ -16,8 +16,8 @@ function App() {
         <Route path="/item/:id" element={<ItemDetailConteiner/>}/>      
         <Route path="/productos/:category" element={<ItemListContainer/>}/>
       </Routes>      
+      <Footer/>
     </BrowserRouter>
-    </div>
   )
 }
 
