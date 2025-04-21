@@ -3,7 +3,6 @@ import pedirProductos from '../js/pedirProductos';
 import ItemList from '../ItemList/ItemList';
 import Category from '../Categoryfilter/Category';
 import { useParams } from 'react-router-dom';
-import { Col, Container } from 'react-bootstrap';
 import './style.css'
 function ItemListContainer() 
 {
@@ -27,7 +26,7 @@ function ItemListContainer()
     }, [category])
   
   return (
-    <div className='grid-layout'>
+    <div className='color-fondo grid-layout'>
         <div className='flex-container-category'>
         <Category/> 
         </div>       

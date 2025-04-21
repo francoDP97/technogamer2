@@ -8,16 +8,7 @@ function ItemList ({productos, titulo}) {
   <>
 
     <Container className="my-4">
-        <h1 className="text-center">{titulo}</h1>
-        <hr/>
-        <input
-          type="text"
-          className="form-control"
-          placeholder="Buscar por nombre"
-          value={busqueda}
-          onChange={(e) => setBusqueda(e.target.value)}
-        />
-        <hr/>  
+  
 
         <Row>
          

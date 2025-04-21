@@ -4,13 +4,15 @@ import '../ItemListContainer/style.css'
 
 function Category() {
   return (
-    <div className='sidebar show'>
+    <div>
         <h3>Categorias</h3>
         <ul>
             <li><Link to="/productos">Todos los Productos</Link></li>
-            <li><Link to="/productos/Accessories">Accesorios</Link></li>
-            <li><Link to="/productos/Clothing">Vestimenta</Link></li>
-            <li><Link to="/productos/Kitchen">Cocina</Link></li>
+            <li><Link to="/productos/Accesorios">Accesorios</Link></li>
+            <li><Link to="/productos/Periféricos">Periféricos</Link></li>
+            <li><Link to="/productos/Streaming">Streaming</Link></li>
+            <li><Link to="/productos/Hardware">Hardware</Link></li>
+            
         </ul>
     </div>
   )
