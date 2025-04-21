@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from './pages/Navbar/Navbar.jsx'
 import Homer from './pages/Homer/Homer.jsx'
+import Footer from './pages/Footer/Footer.jsx'
 import './App.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <>
       <Navbar />
       <Homer />
+      <Footer />
     </>
   )
 }
