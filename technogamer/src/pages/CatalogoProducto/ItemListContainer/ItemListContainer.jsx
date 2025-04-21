@@ -8,21 +8,16 @@ function ItemListContainer()
 {
     const [productos, setProductos] = useState([]);
     const category = useParams().category;
-    const [titulo, setTitulo] = useState ("Catalogo de Productos")
 
     useEffect ( () => 
     {
-        pedirProductos()
+        setTimeout(function(){
+          pedirProductos()
             .then((res) => 
                 {
-                    if (category){
-                        setProductos (res.filter((prod) => prod.category === category));
-                        setTitulo(category);
-                    }else{
-                        setProductos (res);
-                        setTitulo("Catalogo de Producto");
-                    }                    
+                    category ? setProductos(res.filter((prod) => prod.category === category)) : setProductos(res);
                 })
+            }, 250);
     }, [category])
   
   return (
@@ -31,7 +26,7 @@ function ItemListContainer()
         <Category/> 
         </div>       
         <div className='flex-container'>
-        <ItemList productos = {productos} titulo={titulo}/>
+        <ItemList productos = {productos}/>
         </div>
     </div>
   )

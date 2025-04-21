@@ -10,20 +10,20 @@ function Item({producto}) {
             className="card-img-top"
             alt={producto.image}            
           />
- <div className="card-body d-flex flex-column justify-content-between">
-    <div>
-  <h5 className="card-title">{producto.name}</h5>
-  <p className="card-text fw-bold">${producto.price}</p>
-  </div>
-  <div className="d-flex flex-column  gap-2 mt-3">
-    <Button className="btn-sm" as={Link} to={`/item/${producto.id}`} variant="primary">
-      Ver Detalle
-    </Button>
-    <Button className="btn-sm" variant="success">
-      Agregar al carrito
-    </Button>
-  </div>
-</div>
+          <div className="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h5 className="card-title">{producto.name}</h5>
+              <p className="card-text fw-bold">${producto.price}</p>
+            </div>
+            <div className="d-flex flex-column  gap-2 mt-3">
+              <Button className="btn-sm" as={Link} to={`/item/${producto.id}`} variant="primary">
+                Ver Detalle
+              </Button>
+              <Button className="btn-sm" variant="success">
+                Agregar al carrito
+              </Button>
+            </div>
+          </div>
         </div>
     </div>
   )

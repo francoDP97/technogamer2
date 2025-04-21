@@ -8,10 +8,12 @@ export default function ItemDetailConteiner() {
     const [item, setItem]= useState(null);
     const id = useParams().id;
     useEffect(() => {
+      setTimeout(function() {
         pedirItemPorId(Number(id))
             .then((res) => {
                 setItem(res);
             })
+          }, 250);
     }, [id])
 
   return (
