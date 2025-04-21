@@ -1,13 +1,13 @@
 import React from 'react'
 import { Card, Container, Button } from 'react-bootstrap'
 import Category from '../Categoryfilter/Category'
-//import '../ItemListContainer/style.css'
+import '../ItemListContainer/style.css'
 
 function ItemDetail({item}) {
   return ( 
-    <div className='grid-layout'>
+    <div className='color-fondo grid-layout'>
     <Category/>
-    <Container className='d-flex justify-content-center'>  
+    <Container className='d-flex'>  
     <Card style={{ width: '18rem' }}>
         <Card.Img variant='top' src={item.image} />
         <Card.Body>
