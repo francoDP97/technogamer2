@@ -16,12 +16,13 @@ function Register() {
 
   return (
     <div className="container mt-5">
-      <h2>Registro</h2>
+      <h3>Registro</h3>
       <form onSubmit={handleRegister}>
         <input className="form-control mb-2" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required />
         <input className="form-control mb-2" type="password" placeholder="Contraseña" value={pass} onChange={e => setPass(e.target.value)} required />
         <button className="btn btn-success" type="submit">Registrar</button>
       </form>
+      <br />
     </div>
   );
 }
