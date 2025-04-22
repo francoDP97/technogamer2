@@ -26,6 +26,6 @@
     color: #F5F5F5;
     font-family: "Saira", sans-serif;
     font-weight: bold;
-    font-size: 40px;
+    font-size: clamp(1.5rem, 5vw, 40px);
 
 }

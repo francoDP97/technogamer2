@@ -15,7 +15,7 @@ function Productos() {
     return (
         <>
             <Row>
-                <Col xs={6} md={6}>
+                <Col xs={12} lg={6}>
                     {/*poner el link */}
                     <div className='producto'>
                         <div className='imgProducto'>
@@ -27,7 +27,7 @@ function Productos() {
                         </div>
                     </div>
                     <Row >
-                        <Col xs={6} md={6} className='ps-0'>
+                        <Col xs={12} lg={6} className='ps-0'>
                             {/*poner el link */}
                             <div className='producto_col2'>
                                 <div className='imgProducto'>
@@ -39,7 +39,7 @@ function Productos() {
                                 </div>
                             </div>
                         </Col>
-                        <Col xs={6} md={6} className='pe-0'>
+                        <Col xs={12} lg={6} className='pe-0'>
                             {/*poner el link */}
                             <div className='producto_col2'>
                                 <div className='imgProducto'>
@@ -63,9 +63,9 @@ function Productos() {
                         </div>
                     </div>
                 </Col>
-                <Col xs={6} md={6}>
+                <Col xs={12} lg={6}>
                     <Row >
-                        <Col xs={6} md={6} className='ps-0'>
+                        <Col xs={12} lg={6} className='ps-0'>
                             {/*poner el link */}
                             <div className='producto_col2'>
                                 <div className='imgProducto'>
@@ -77,7 +77,7 @@ function Productos() {
                                 </div>
                             </div>
                         </Col>
-                        <Col xs={6} md={6} className='pe-0'>
+                        <Col xs={12} lg={6} className='pe-0'>
                             {/*poner el link */}
                             <div className='producto_col2'>
                                 <div className='imgProducto'>
@@ -101,7 +101,7 @@ function Productos() {
                         </div>
                     </div>
                     <Row >
-                        <Col xs={6} md={6} className='ps-0'>
+                        <Col xs={12} lg={6} className='ps-0'>
                             {/*poner el link */}
                             <div className='producto_col2'>
                                 <div className='imgProducto'>
@@ -113,7 +113,7 @@ function Productos() {
                                 </div>
                             </div>
                         </Col>
-                        <Col xs={6} md={6} className='pe-0'>
+                        <Col xs={12} lg={6} className='pe-0'>
                             {/*poner el link */}
                             <div className='producto_col2'>
                                 <div className='imgProducto'>

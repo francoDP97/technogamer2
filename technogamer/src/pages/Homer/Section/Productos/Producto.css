@@ -3,6 +3,15 @@
     margin: auto;
 }
 
+@media (max-width: 500px) {
+
+    .pe-0,
+    .ps-0 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
 .producto,
 .producto_col2 {
     width: 100%;

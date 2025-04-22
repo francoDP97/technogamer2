@@ -3,6 +3,8 @@ import Hardware from "../../../assets/img/iconos/hardware.svg"
 import Chat from "../../../assets/img/iconos/chat.svg"
 import Garantia from "../../../assets/img/iconos/garantia.svg"
 import Camion from "../../../assets/img/iconos/camion.svg"
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import './Article.css'
 
 function Article() {
@@ -39,22 +41,26 @@ function Article() {
     ]
     return (
         <>
-            <article className="beneficios">
-                <h3>¿POR QUÉ COMPRAR DIRECTAMENTE A TECHNOGAMER ?</h3>
-                <div className="nuetros_bene">
-                    {beneficios.map((beneficio, index) => (
-                        <div key={index} className="beneficio">
-                            <div className="img_ben">
-                                <img src={beneficio.icono} alt={beneficio.nombre} />
-                            </div>
-                            <p>
-                                {beneficio.texto}
-                            </p>
-                        </div>
-                    ))}
-                </div>
+            <Row className="beneficios">
+                <Col xs={12} lg={4}>
+                    <h3>¿POR QUÉ COMPRAR DIRECTAMENTE A TECHNOGAMER ?</h3>
+                </Col>
+                <Col xs={12} lg={8}>
+                    <Row className="nuetros_bene">
+                        {beneficios.map((beneficio, index) => (
+                            <Col key={index} xs={12} lg={3} className="beneficio">
+                                <div className="img_ben">
+                                    <img src={beneficio.icono} alt={beneficio.nombre} />
+                                </div>
+                                <p>
+                                    {beneficio.texto}
+                                </p>
+                            </Col>
+                        ))}
+                    </Row>
+                </Col>
 
-            </article>
+            </Row>
         </>
     );
 }
