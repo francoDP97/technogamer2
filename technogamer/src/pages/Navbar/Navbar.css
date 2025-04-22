@@ -24,6 +24,12 @@ nav .logo {
     text-transform: uppercase;
 }
 
+nav .logo:hover {
+    color: #F5F5F5;
+
+}
+
+
 nav .logo img {
     width: 49px;
     height: auto;

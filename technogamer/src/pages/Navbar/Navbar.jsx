@@ -9,10 +9,11 @@ import BootstrapNavbar from 'react-bootstrap/Navbar'; // Renombrado para evitar 
 function Navbar() {
     return (
         <BootstrapNavbar collapseOnSelect expand="lg" className="navabar">
-            <BootstrapNavbar.Brand href="#home" className="logo">
-                <img src={isotipo} alt="isotipo" />
-                <p>
-                    Technogamer</p>
+            <BootstrapNavbar.Brand >
+                <Nav.Link href="/" className="logo">
+                    <img src={isotipo} alt="isotipo" />
+                    <p>Technogamer</p>
+                </Nav.Link>
             </BootstrapNavbar.Brand>
             <BootstrapNavbar.Toggle aria-controls="responsive-navbar-nav" />
             <BootstrapNavbar.Collapse className="navbar_enalace_iconos" id="responsive-navbar-nav">
