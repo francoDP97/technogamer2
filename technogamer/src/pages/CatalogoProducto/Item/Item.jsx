@@ -16,7 +16,7 @@ function Item({producto}) {
               <p className="card-text fw-bold">${producto.price}</p>
             </div>
             <div className="d-flex flex-column  gap-2 mt-3">
-              <Button className="btn-sm" as={Link} to={`/item/${producto.id}`} variant="primary">
+              <Button className="btn-sm" as={Link} to={`/producto/${producto.id}`} variant="primary">
                 Ver Detalle
               </Button>
               <Button className="btn-sm" variant="success">

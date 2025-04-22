@@ -18,6 +18,8 @@ function Navbar() {
             <BootstrapNavbar.Collapse className="navbar_enalace_iconos" id="responsive-navbar-nav">
                 <Nav className="enlaces ">
                     <Nav.Link className="enlace" href="/productos">Productos</Nav.Link>
+                    <Nav.Link className="enlace" href="/login">Login</Nav.Link>
+                    <Nav.Link className="enlace" href="/register">Registrarse</Nav.Link>
                     <Nav.Link className="enlace" href="#soporte">Soporte</Nav.Link>
                     <Nav.Link className="enlace" href="#nosotros">Nosotros</Nav.Link>
                 </Nav>
