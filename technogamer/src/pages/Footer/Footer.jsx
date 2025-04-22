@@ -13,8 +13,8 @@ function Footer() {
     return (
         <>
             <footer>
-                <Row className='align-items- center'>
-                    <Col xs={12} md={4}>
+                <Row className='align-items- center '>
+                    <Col xs={12} md={4} >
                         <div className='logo'>
                             <img src={isotipo} alt="isotipo" />
                             <p>Technogamer</p>
