@@ -6,9 +6,14 @@ function Category({ selectedCategory, selectedSubcategory }) {
   // Categorías y sus subcategorías
   const categories = {
     Teclado: ['Logitech', 'Redragon', 'SteelSeries'],
-    Periféricos: ['Mouse', 'Auriculares'],
-    Streaming: ['Webcam', 'Micrófono'],
-    Hardware: ['Procesadores', 'Placas Madre'],
+    Auriculares: ['Razer', 'SteelSeries', 'Logitech'],
+    Fuente: ['Gigabyte', 'Be Quiet!', 'Cooler Master'],
+    Almacenamiento: ['Discos Externos', 'Discos Rígidos', 'Discos Sólidos Ssd'],
+    Gabinetes: ['Thermaltake', 'Cougar', 'Be Quiet!'],
+    Memorias: ['Memorias RAM', 'Memorias Notebook'],
+    Sillas: ['Nitro Concepts', 'Vertagear', 'Noblechairs'],
+    Grafica: ['Geforce', 'Radeon Amd', 'Intel Arc'],
+    Refrigeración: ['Coolers Fan', 'Coolers Cpu']
   };
 
   return (

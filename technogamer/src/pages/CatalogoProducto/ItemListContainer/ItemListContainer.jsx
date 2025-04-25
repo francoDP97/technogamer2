@@ -4,6 +4,7 @@ import pedirProductos from '../js/pedirProductos';
 import ItemList from '../ItemList/ItemList';
 import Category from '../Categoryfilter/Category';
 import './ItemListContainer.css'
+import pronto from '../../../assets/img/iconos/pronto.png'
 
 
 function ItemListContainer() {
@@ -39,7 +40,13 @@ function ItemListContainer() {
         <Category selectedCategory={category} selectedSubcategory={subcategory} />
       </div>
       <div className='flex-container'>
-        <ItemList productos={productos} />
+        {productos.length > 0 ? (
+          <ItemList productos={productos} />
+        ) : (
+          <div className="muy-pronto"><h3>¡MUY PRONTO <br />TENDREMOS MÁS!</h3>
+            <img src={pronto} alt="pronto" />
+          </div>
+        )}
       </div>
     </div>
   );
