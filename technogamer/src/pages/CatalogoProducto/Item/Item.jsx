@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import Button from "react-bootstrap/Button";
+import './Item.css';
+import carrito from '../../../assets/img/iconos/carrito.png'
 function Item({ producto }) {
   return (
-    <div className="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div className="card h-100">
+    <Link to={`/producto/${producto.id}`} className="col-sm-12 col-md-5 col-lg-3 p-2">
+      <div className="card ">
         <img
           src={producto.image}
           className="card-img-top"
@@ -17,19 +19,16 @@ function Item({ producto }) {
                 ? producto.name.slice(0, 50) + '...'
                 : producto.name}
             </h5>
-            <p className="card-text fw-bold">${producto.price}</p>
           </div>
-          <div className="d-flex flex-column  gap-2 mt-3">
-            <Button className="btn-sm" as={Link} to={`/producto/${producto.id}`} variant="primary">
-              Ver Detalle
-            </Button>
-            <Button className="btn-sm" variant="success">
-              Agregar al carrito
+          <div className="d-flex justify-content-between gap-2 mt-3 w-100 align-items-end">
+            <p className="card-text ">${producto.price}</p>
+            <Button className="btn-carrito" >
+              <img src={carrito} alt="carrito" />
             </Button>
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
