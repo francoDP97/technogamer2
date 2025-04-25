@@ -3,7 +3,7 @@ const productos = [
     id: 1,
     name: "Teclado Mecanico Logitech PRO X TKL Wireless Lightspeed 1ms White RGB Switch GX 50Hs",
     price: 29400.00,
-    image: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39742_Teclado_Mecanico_Logitech_PRO_X_TKL_Wireless_Lightspeed_1ms_White_RGB_Switch_GX_50Hs_e564c8a6-med.jpg",
+    image: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39742_Teclado_Mecanico_Logitech_PRO_X_TKL_Wireless_Lightspeed_1ms_White_RGB_Switch_GX_50Hs_e564c8a6-grn.jpg",
     category: "Teclado",
     subcategory: "Logitech", // nuevo
     description: "Teclado mecánico retroiluminado, switches Outemu Blue.",
@@ -13,7 +13,7 @@ const productos = [
     id: 2,
     name: "Teclado Mecanico Logitech PRO X 60 Wireless Lightspeed 2.4Ghz Bluetooth Black Switch GX RGB 65Hs",
     price: 12900.00,
-    image: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39638_Teclado_Mecanico_Logitech_PRO_X_60_Wireless_Lightspeed_2.4Ghz_Bluetooth_Black_Switch_GX_RGB_65Hs_c5716463-med.jpg",
+    image: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39638_Teclado_Mecanico_Logitech_PRO_X_60_Wireless_Lightspeed_2.4Ghz_Bluetooth_Black_Switch_GX_RGB_65Hs_c5716463-grn.jpg",
     category: "Teclado",
     subcategory: "Logitech", // nuevo
     description: "Teclado mecánico retroiluminado, switches Outemu Blue.",

@@ -1,0 +1,49 @@
+.item_producto {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    flex-wrap: nowrap;
+    background-color: #FFFF;
+}
+
+.item_producto div img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+.informacion {
+    background-color: #0D0D0D;
+    color: #F5F5F5;
+    font-family: 'Saira', sans-serif;
+    padding: 2rem;
+}
+
+.informacion h3 {
+    line-height: 3rem;
+    font-size: clamp(24px, 5vw, 36px);
+    font-weight: bold;
+}
+
+.descripcion {
+    font-size: clamp(14px, 2.5vw, 20px);
+}
+
+.precio {
+    font-size: clamp(18px, 2.5vw, 24px);
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.precio_oficial {
+    font-weight: 200;
+}
+
+.precio_oficial span,
+.garantia_y_stock {
+    font-weight: bold;
+    color: #008CFF;
+    font-size: clamp(24px, 5vw, 36px);
+}
