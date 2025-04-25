@@ -1,34 +1,48 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import pedirProductos from '../js/pedirProductos';
 import ItemList from '../ItemList/ItemList';
 import Category from '../Categoryfilter/Category';
-import { useParams } from 'react-router-dom';
-import './style.css'
-function ItemListContainer() 
-{
-    const [productos, setProductos] = useState([]);
-    const category = useParams().category;
+import './ItemListContainer.css'
 
-    useEffect ( () => 
-    {
-        setTimeout(function(){
-          pedirProductos()
-            .then((res) => 
-                {
-                    category ? setProductos(res.filter((prod) => prod.category === category)) : setProductos(res);
-                })
-            }, 250);
-    }, [category])
-  
+
+function ItemListContainer() {
+  const [productos, setProductos] = useState([]);
+  const { category, subcategory } = useParams(); // ahora también usamos subcategoría
+
+  useEffect(() => {
+    pedirProductos()
+      .then((res) => {
+        let filtered = res;
+
+        // Filtra por categoría
+        if (category) {
+          filtered = filtered.filter((prod) => prod.category === category);
+        }
+
+        // Filtra por subcategoría
+        if (subcategory) {
+          filtered = filtered.filter((prod) => prod.subcategory === subcategory);
+        }
+
+        setProductos(filtered);
+      })
+      .catch((error) => {
+        console.error('Error al pedir productos:', error);
+      });
+  }, [category, subcategory]);
+
   return (
-    <div className='color-fondo grid-layout'>
-        <div className='flex-container-category'>
-        <Category/> 
-        </div>       
-        <div className='flex-container'>
-        <ItemList productos = {productos}/>
-        </div>
+    <div className=' grid-layout'>
+      <div className='flex-container-category'>
+        {/* Le pasamos category y subcategory para que el componente Category pueda saber cuál está activa */}
+        <Category selectedCategory={category} selectedSubcategory={subcategory} />
+      </div>
+      <div className='flex-container'>
+        <ItemList productos={productos} />
+      </div>
     </div>
-  )
+  );
 }
+
 export default ItemListContainer;

@@ -17,6 +17,7 @@ function App() {
         <Route path="/productos" element={<ItemListContainer />} />
         <Route path="/producto/:id" element={<ItemDetailConteiner />} />
         <Route path="/productos/:category" element={<ItemListContainer />} />
+        <Route path="/productos/:category/:subcategory" element={<ItemListContainer />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
       </Routes>

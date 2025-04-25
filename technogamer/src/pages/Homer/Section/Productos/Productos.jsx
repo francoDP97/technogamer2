@@ -1,6 +1,7 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 import './Producto.css'
 import Teclado from './../../../../assets/img/Teclado.jpg'
 import Sdd from './../../../../assets/img/Sdd.jpg'
@@ -16,16 +17,17 @@ function Productos() {
         <>
             <Row>
                 <Col xs={12} lg={6}>
-                    {/*poner el link */}
-                    <div className='producto'>
-                        <div className='imgProducto'>
-                            <img src={Teclado} alt="Teclado" />
+                    <Link to="/productos/Teclado" className='producto'>
+                        <div className='producto'>
+                            <div className='imgProducto'>
+                                <img src={Teclado} alt="Teclado" />
+                            </div>
+                            <div className='textoDeComprea'>
+                                <h3>Teclados</h3>
+                                <p>Compra Ahora</p>
+                            </div>
                         </div>
-                        <div className='textoDeComprea'>
-                            <h3>Teclados</h3>
-                            <p>Compra Ahora</p>
-                        </div>
-                    </div>
+                    </Link>
                     <Row >
                         <Col xs={12} lg={6} className='ps-0'>
                             {/*poner el link */}

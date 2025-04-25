@@ -1,0 +1,33 @@
+.selected-category {
+    border-bottom: 1px solid #008CFF;
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.categoria {
+    margin-top: 2rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+.categoria li a {
+    padding-left: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.subcategories li a {
+    font-weight: 100;
+    font-size: 20px;
+    padding-left: 1rem;
+    margin-top: 0.3rem;
+}

@@ -1,28 +1,41 @@
 const productos = [
   {
     id: 1,
-    name: "Teclado Mecánico Redragon Kumara K552",
+    name: "Teclado Mecanico Logitech PRO X TKL Wireless Lightspeed 1ms White RGB Switch GX 50Hs",
     price: 29900,
-    image: "https://m.media-amazon.com/images/I/71kr3WAj1FL._AC_SL1500_.jpg",
-    category: "Periféricos",
+    image: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39742_Teclado_Mecanico_Logitech_PRO_X_TKL_Wireless_Lightspeed_1ms_White_RGB_Switch_GX_50Hs_e564c8a6-med.jpg",
+    category: "Teclado",
+    subcategory: "Logitech", // nuevo
     description: "Teclado mecánico retroiluminado, switches Outemu Blue.",
     stock: 10
   },
   {
     id: 2,
-    name: "Mouse Logitech G502 HERO",
-    price: 47900,
-    image: "https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SL1500_.jpg",
-    category: "Periféricos",
-    description: "Mouse gamer con sensor HERO 25K, 11 botones programables.",
+    name: "Teclado Mecanico Logitech PRO X 60 Wireless Lightspeed 2.4Ghz Bluetooth Black Switch GX RGB 65Hs",
+    price: 29900,
+    image: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39638_Teclado_Mecanico_Logitech_PRO_X_60_Wireless_Lightspeed_2.4Ghz_Bluetooth_Black_Switch_GX_RGB_65Hs_c5716463-med.jpg",
+    category: "Teclado",
+    subcategory: "Logitech", // nuevo
+    description: "Teclado mecánico retroiluminado, switches Outemu Blue.",
     stock: 10
   },
   {
     id: 3,
-    name: "Webcam Logitech C920 HD Pro",
+    name: "Teclado Mecanico Logitech G915X Wireless tri-mode Low Profile Lightspeed TKL Switch Tactil Black",
+    price: 29900,
+    image: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_42700_Teclado_Mecanico_Logitech_G915X_Wireless_tri-mode_Low_Profile_Lightspeed_TKL_Switch_Tactil_Black_4a5f50dd-grn.jpg",
+    category: "Teclado",
+    subcategory: "Logitech", // nuevo
+    description: "Teclado mecánico retroiluminado, switches Outemu Blue.",
+    stock: 10
+  },
+  {
+    id: 4,
+    name: "Teclado Mecanico Redragon K686 Eisa PRO Wireless 2.4GHz Bluetooth RGB Switch Red Linear White/Blue",
     price: 79.99,
-    image: "https://m.media-amazon.com/images/I/71iNwni9TsL._AC_SL1500_.jpg",
-    category: "Streaming",
+    image: "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_43138_Teclado_Mecanico_Redragon_K686_Eisa_PRO_Wireless_2.4GHz_Bluetooth_RGB_Switch_Red_Linear_White_Blue_6c900b83-grn.jpg",
+    category: "Teclado",
+    subcategory: "Redragon",
     description: "Webcam Full HD 1080p con micrófono estéreo.",
     stock: 10
   },
@@ -53,9 +66,8 @@ const productos = [
     description: "6 núcleos, 12 hilos, excelente rendimiento en juegos.",
     stock: 10
   },
-  
+
 ];
 
-  
-  export default productos;
-  
+
+export default productos;
