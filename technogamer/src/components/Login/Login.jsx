@@ -51,7 +51,7 @@ function Login({ abrirModalRegister }) {
 
         <div className="login-footer">
           <Button texto="ENVIAR" type="submit" />
-          <button type="button" className="register-link" onClick={abrirModalRegister}>
+          <button type="button" className="register-link border border-0" onClick={abrirModalRegister}>
             ¿No tienes cuenta? Regístrate
           </button>
         </div>
