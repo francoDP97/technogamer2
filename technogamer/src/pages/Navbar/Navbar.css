@@ -74,7 +74,12 @@ nav .logo img {
     border-bottom: 2.3px solid #008CFF;
 }
 
+.iconos {
+    background-color: transparent;
+}
+
 .iconos img {
     width: 30px;
     height: auto;
+
 }

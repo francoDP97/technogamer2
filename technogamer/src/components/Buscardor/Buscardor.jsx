@@ -1,8 +1,9 @@
 // src/components/Buscador/Buscador.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Buscador.css';
 
-function Buscador() {
+function Buscador(props) {
     const [texto, setTexto] = useState('');
     const navigate = useNavigate();
 
@@ -17,12 +18,13 @@ function Buscador() {
         <form onSubmit={manejarBusqueda} className="form-buscador">
             <input
                 type="text"
-                placeholder="Buscar..."
+                placeholder="Buscar producto"
                 value={texto}
                 onChange={(e) => setTexto(e.target.value)}
+                className="input-buscador"
             />
-            <button type="submit">🔍</button>
         </form>
+
     );
 }
 
