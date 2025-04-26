@@ -4,40 +4,48 @@
     border: 1px solid #008CFF;
     font-family: 'Sairi', sans-serif;
     color: #D9D9D9;
-    display: flex;
-    flex-wrap: wrap;
+
     justify-items: start;
     align-items: center;
     padding: 2rem 1.5rem;
+    width: 100%;
 }
 
 .beneficios h3 {
-    width: 30%;
     font-weight: bold;
-    line-height: 50px;
-    font-size: 40px;
+    line-height: normal;
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 40px);
+}
+
+@media (min-width: 1024px) {
+    .beneficios h3 {
+        text-align: left;
+        font-weight: bold;
+        line-height: 50px;
+    }
 }
 
 .nuetros_bene {
-    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-around
 }
 
 .beneficio {
-    width: 21%;
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding: 1rem;
 }
 
+
+
 .img_ben {
-    width: 50%;
-    height: auto;
     padding: 1rem;
     border-radius: 50%;
     border: 1px solid #008CFF;
+    height: auto;
 }
 
 .img_ben img {

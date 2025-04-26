@@ -9,7 +9,7 @@ function Homer() {
             <div className="main">
                 <div className="direccion">
                     <h1>Al maximo con el Gamer</h1>
-                    <div class="triangulo"></div>
+                    <div className="triangulo"></div>
                 </div>
             </div>
             <Section />

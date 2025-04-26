@@ -1,26 +1,32 @@
 import React from 'react'
-import { Card, Container, Button } from 'react-bootstrap'
-import Category from '../Categoryfilter/Category'
-import '../ItemListContainer/style.css'
+import { Card, Container } from 'react-bootstrap'
+import './ItemDetail.css';
+import Button from '../../../components/button/Button';
 
-function ItemDetail({item}) {
-  return ( 
-    <div className='color-fondo grid-layout'>
-    <Category/>
-    <Container className='d-flex'>  
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant='top' src={item.image} />
-          <Card.Body>
-            <Card.Title>{item.name}</Card.Title>
-            <Card.Text>Precio: ${item.price}</Card.Text>
-            <Card.Text>Categoria: {item.category}</Card.Text>
-            <Card.Text>Descripcion: {item.description}</Card.Text>
-            <Card.Text>Stock: {item.stock}</Card.Text>
-            <Button variant="success">Agregar al carrito</Button>            
-          </Card.Body>
-      </Card>
-    </Container>    
-    </div>
+
+function ItemDetail({ item }) {
+  return (
+    <>
+      <div className='item_producto'>
+        <div>
+          <img src={item.image} alt="producto_img" />
+        </div>
+        <div className='informacion'>
+          <h3>{item.name}</h3>
+          <p className='descripcion'>Marca: {item.subcategory}</p>
+          <p className='descripcion'>Descripcion: {item.description}</p>
+          <div className='precio'>
+            <p className='precio_oficial'>Precio especial: <span> ${item.price}.00</span></p>
+            <p>12 cuotas de ${(item.price / 12).toFixed(2)}</p>
+            <p>Precio de la lista ${(item.price * 2).toFixed(2)}</p>
+          </div>
+          <Button texto="Comprar ahora" />
+          <p className='garantia_y_stock'>Garantia 12 meses</p>
+          <p className='garantia_y_stock'>stock : {item.stock}</p>
+        </div>
+
+      </div>
+    </>
   )
 }
 

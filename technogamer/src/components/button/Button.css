@@ -1,0 +1,14 @@
+.carrito {
+    background-color: #008CFF;
+    border-radius: 0;
+    padding: 0.6rem;
+    font-family: 'Saira', sans-serif;
+    font-size: clamp(14px, 2.5vw, 20px);
+    text-transform: uppercase;
+    color: #F5F5F5;
+    font-weight: bold;
+}
+
+.sa {
+    background-color: red;
+}

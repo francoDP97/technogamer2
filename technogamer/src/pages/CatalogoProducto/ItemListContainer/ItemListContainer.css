@@ -1,0 +1,44 @@
+.grid-layout {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 1rem;
+    padding: 20px;
+    color: #F5F5F5;
+    font-family: "Saira", sans-serif;
+    width: 90%;
+    margin: 4rem auto;
+}
+
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tituloCategoria {
+    text-transform: uppercase;
+    font-family: "Saira", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.muy-pronto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.muy-pronto h3 {
+    font-family: "Saira", sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    color: #00A3FF;
+    text-align: center;
+    padding: 2rem;
+}
+
+.muy-pronto img {
+    margin: auto;
+    width: 12rem;
+    height: auto;
+}

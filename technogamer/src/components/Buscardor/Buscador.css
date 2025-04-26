@@ -1,0 +1,24 @@
+.form-buscador {
+    width: 100%;
+
+}
+
+.input-buscador {
+    font-family: "Saira", sans-serif;
+    font-weight: bold;
+    color: #00A3FF;
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #00A3FF;
+    background-color: #1F1F1F;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+}
+
+.input-buscador:focus {
+    outline: none;
+    border-color: #007ACC;
+    box-shadow: 0 0 5px rgba(0, 163, 255, 0.5);
+}
