@@ -1,7 +1,7 @@
 import React from "react";
 import carrito from "../../assets/img/iconos/carrito.png"
-import buscador from "../../assets/img/iconos/buscador.png"
 import isotipo from "../../assets/img/isotipo_technogamer.svg";
+import Buscador from "../../components/Buscardor/Buscardor";
 import './Navbar.css';
 import Nav from 'react-bootstrap/Nav';
 import BootstrapNavbar from 'react-bootstrap/Navbar'; // Renombrado para evitar conflicto
@@ -25,8 +25,9 @@ function Navbar() {
                     <Nav.Link className="enlace" href="#nosotros">Nosotros</Nav.Link>
                 </Nav>
                 <Nav>
-                    <Nav.Link className="iconos" href="#contacto">
-                        <img src={buscador} alt="buscador" /></Nav.Link>
+                    <div className="iconos">
+                        <Buscador />
+                    </div>
                     <Nav.Link className="iconos" href="#redes">
                         <img src={carrito} alt="carrito" />
                     </Nav.Link>
