@@ -1,6 +1,6 @@
-import Navbar from './pages/Navbar/Navbar.jsx'
+import Navbar from './components/Navbar/Navbar.jsx'
 import Homer from './pages/Homer/Homer.jsx'
-import Footer from './pages/Footer/Footer.jsx'
+import Footer from './components/Footer/Footer.jsx'
 import ItemListContainer from './pages/CatalogoProducto/ItemListContainer/ItemListContainer.jsx'
 import ItemDetailConteiner from './pages/CatalogoProducto/ItemDetailConteiner/ItemDetailConteiner.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -18,8 +18,6 @@ function App() {
         <Route path="/producto/:id" element={<ItemDetailConteiner />} />
         <Route path="/productos/:category" element={<ItemListContainer />} />
         <Route path="/productos/:category/:subcategory" element={<ItemListContainer />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register />} />
       </Routes>
       <Footer />
     </BrowserRouter>

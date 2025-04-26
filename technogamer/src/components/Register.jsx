@@ -11,7 +11,6 @@ function Register() {
     e.preventDefault();
     localStorage.setItem("user", JSON.stringify({ email, pass }));
     alert("Usuario registrado correctamente");
-    navigate('/login');
   };
 
   return (
