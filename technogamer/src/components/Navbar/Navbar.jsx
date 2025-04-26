@@ -3,8 +3,8 @@ import carrito from "../../assets/img/iconos/carrito.png";
 import isotipo from "../../assets/img/isotipo_technogamer.svg";
 import lupa from "../../assets/img/iconos/buscador.png";
 import Buscador from "../Buscardor/Buscardor";
-import Register from "../Register";
-import Login from "../Login";
+import Register from "../Register/Register";
+import Login from "../Login/Login";
 import './Navbar.css';
 import Nav from 'react-bootstrap/Nav';
 import BootstrapNavbar from 'react-bootstrap/Navbar';
@@ -60,14 +60,15 @@ function Navbar() {
             {/* Modales */}
             <CustomModal
                 visible={modalType === 'register'}
-                onHide={() => setModalType(null)}
-                contenido={<Register />}
+                onHide={handleClose}
+                contenido={<Register abrirModalLogin={() => setModalType('login')} />}
                 cruz={true}
             />
+
             <CustomModal
                 visible={modalType === 'login'}
-                onHide={() => setModalType(null)}
-                contenido={<Login />}
+                onHide={handleClose}
+                contenido={<Login abrirModalRegister={() => setModalType('register')} />}
                 cruz={true}
             />
             <CustomModal

@@ -4,8 +4,6 @@ import Footer from './components/Footer/Footer.jsx'
 import ItemListContainer from './pages/CatalogoProducto/ItemListContainer/ItemListContainer.jsx'
 import ItemDetailConteiner from './pages/CatalogoProducto/ItemDetailConteiner/ItemDetailConteiner.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Login from './components/Login.jsx'
-import Register from './components/Register.jsx'
 import './App.css'
 
 function App() {

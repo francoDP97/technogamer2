@@ -1,0 +1,63 @@
+.register-container {
+    background: #fff;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    border: none;
+    padding: 1rem;
+}
+
+.register-title {
+    margin: 0rem 0rem 2rem 0rem;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    color: #0D0D0D;
+    font-family: 'Saira', sans-serif;
+    font-weight: bold;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-input {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: #e0e0e0;
+    font-size: 16px;
+    width: 100%;
+}
+
+.phone-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.small-input {
+    flex: 1;
+}
+
+.register-label {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+.register-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between
+}
+
+.register-footer a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+}
