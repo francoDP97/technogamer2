@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;700&display=swap');
+  
+  body {
+    font-family: 'Saira', sans-serif;
+    background-color: #0D0D0D;
+    color: #F5F5F5;
+  }
+  
+  /* Contenedor principal */
+  .about2-container {
+    padding: 4rem 2rem;
+  }
+  
+  /* Frase */
+  .about2-frase h1 {
+    font-size: 2.5rem;
+    color: #008cff;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  /* Sección del equipo */
+  .about2-equipo {
+    margin: 3rem 0;
+    text-align: center;
+  }
+  
+  .about2-equipo h2 {
+    color: #008cff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  .about2-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .about2-card {
+    background-color: #1F1F1F;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 250px;
+    text-align: center;
+  }
+  
+  .about2-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .about2-card h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #F5F5F5;
+  }
+  
+  /* Historia y Orígenes */
+  .about2-historia {
+    text-align: center;
+    margin: 4rem 0;
+  }
+  
+  .about2-historia h2 {
+    color: #008cff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .about2-timeline {
+    position: relative;
+    margin: 0 auto;
+    padding-left: 20px;
+    max-width: 800px;
+  }
+  
+  .about2-timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  .about2-timeline-year {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #008cff;
+  }
+  
+  .about2-timeline-content {
+    padding-left: 40px;
+    background-color: #1F1F1F;
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 600px;
+    margin-left: 30px;
+    color: #F5F5F5;
+    font-size: 1.1rem;
+  }
+  
+  .about2-timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #008cff;
+  }
+  
+  .about2-timeline-item:last-child::before {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .about2-timeline {
+      padding-left: 10px;
+    }
+  
+    .about2-timeline-year {
+      font-size: 1.2rem;
+    }
+  
+    .about2-timeline-content {
+      padding-left: 30px;
+    }
+  }
+  
+  /* Sección de Negocio */
+  .about2-negocio {
+    max-width: 800px;
+    margin: 4rem auto;
+    text-align: center;
+  }
+  
+  .about2-negocio h2 {
+    color: #008cff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .about2-negocio p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
+  }
+  
+  /* Botón */
+  .about2-btn {
+    background-color: #008cff;
+    color: #0D0D0D;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .about2-btn:hover {
+    background-color: #005fa3;
+  }
+  

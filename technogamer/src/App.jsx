@@ -6,6 +6,7 @@ import ItemDetailConteiner from './pages/CatalogoProducto/ItemDetailConteiner/It
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Login from './components/Login.jsx'
 import Register from './components/Register.jsx'
+import About from './pages/About/About.jsx'
 import './App.css'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/productos/:category/:subcategory" element={<ItemListContainer />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
     </BrowserRouter>
