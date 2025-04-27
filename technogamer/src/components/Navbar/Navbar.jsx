@@ -25,7 +25,7 @@ function Navbar() {
                 </div>
                 <div>
                     <button className=" iconos forlogin_forregister" onClick={() => setModalType('register')}>
-                        <p>Registro</p>
+                        <p>Registrarse</p>
                     </button>
                 </div>
             </nav>
