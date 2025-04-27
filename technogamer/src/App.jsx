@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar/Navbar.jsx'
-import Homer from './pages/Homer/Homer.jsx'
+import Home from './pages/Home/Home.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import ItemListContainer from './pages/CatalogoProducto/ItemListContainer/ItemListContainer.jsx'
 import ItemDetailConteiner from './pages/CatalogoProducto/ItemDetailConteiner/ItemDetailConteiner.jsx'
@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Homer />} />
+        <Route path='/' element={<Home />} />
         <Route path="/productos" element={<ItemListContainer />} />
         <Route path="/producto/:id" element={<ItemDetailConteiner />} />
         <Route path="/productos/:category" element={<ItemListContainer />} />
