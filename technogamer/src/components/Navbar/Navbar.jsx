@@ -41,8 +41,8 @@ function Navbar() {
                 <BootstrapNavbar.Collapse className="navbar_enalace_iconos" id="responsive-navbar-nav">
                     <Nav className="enlaces">
                         <Nav.Link className="enlace" href="/productos">Productos</Nav.Link>
-                        <Nav.Link className="enlace" href="/Soporte">Soporte</Nav.Link>
-                        <Nav.Link className="enlace" href="#nosotros">Nosotros</Nav.Link>
+                        <Nav.Link className="enlace" href="/Error">Soporte</Nav.Link>
+                        <Nav.Link className="enlace" href="/about">Nosotros</Nav.Link>
                     </Nav>
                     <Nav className="align-items-center">
                         <div className="iconos">
