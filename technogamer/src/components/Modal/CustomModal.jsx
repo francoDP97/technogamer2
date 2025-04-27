@@ -10,7 +10,7 @@ function CustomModal({ contenido, cruz, visible, onHide, ...props }) {
             centered
             className="mt-5"
         >
-            <Modal.Header closeButton className={cruz ? 'd-flex ' : 'd-none'}  >
+            <Modal.Header closeButton className={cruz ? 'd-flex border border-0 ' : 'd-none'}  >
                 <Modal.Title
                     id="contained-modal-title-vcenter"
                 >
