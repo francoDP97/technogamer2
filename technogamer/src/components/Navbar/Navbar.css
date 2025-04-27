@@ -83,3 +83,23 @@ nav .logo img {
     height: auto;
 
 }
+
+.login_register {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #008CFF;
+    text-transform: uppercase;
+    font-family: 'Saira', sans-serif;
+    color: #F5F5F5;
+}
+
+.forlogin_forregister {
+    color: #F5F5F5;
+    text-transform: uppercase;
+    font-family: 'Saira', sans-serif;
+    border: none;
+    border-left: 1px solid #F5F5F5;
+    padding: 0 0.8rem;
+}

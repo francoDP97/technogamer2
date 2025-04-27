@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Productos from "./Productos/Productos.jsx"
+import ProductosDestacados from "./ProductosDestacados/ProductosDestacados"
 import './Section.css'
 function Section() {
     const [key, setKey] = useState('Categorías de productos');
@@ -16,7 +17,7 @@ function Section() {
                 <Productos />
             </Tab>
             <Tab eventKey="Productos destacados" title="Productos destacados">
-                Productos destacados
+                <ProductosDestacados />
             </Tab>
         </Tabs>
     );
