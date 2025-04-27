@@ -25,7 +25,7 @@ function Navbar() {
                     <Nav.Link className="enlace" href="/login">Login</Nav.Link>
                     <Nav.Link className="enlace" href="/register">Registrarse</Nav.Link>
                     <Nav.Link className="enlace" href="#soporte">Soporte</Nav.Link>
-                    <Nav.Link className="enlace" href="#nosotros">Nosotros</Nav.Link>
+                    <Nav.Link className="enlace" href="/about">Nosotros</Nav.Link>
                 </Nav>
                 <Nav className="align-items-center">
                     <div className="iconos">
