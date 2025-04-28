@@ -40,6 +40,7 @@ function Register({ abrirModalLogin }) {
 
     localStorage.setItem("user", JSON.stringify(user));
     alert("Usuario registrado con éxito");
+    abrirModalLogin();
   };
 
   return (
