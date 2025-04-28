@@ -18,6 +18,7 @@ function Login({ abrirModalRegister }) {
     } else {
       alert("Datos incorrectos");
     }
+    navigate('/Error');
   };
 
   return (
