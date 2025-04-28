@@ -1,11 +1,21 @@
-import React from 'react'
-import { Link } from "react-router-dom"
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
-import './Item.css';
-import carrito from '../../../assets/img/iconos/carrito.png'
+import "./Item.css";
+import carrito from "../../../assets/img/iconos/carrito.png";
+import { Context } from "../../../components/Context/Context";
+
 function Item({ producto }) {
+  const { cart, setCart } = useContext(Context);
+  const buyProducts = (producto) => {
+    setCart([...cart, producto]);
+  };
+
   return (
-    <Link to={`/producto/${producto.id}`} className="col-sm-12 col-md-5 col-lg-3 p-2">
+    <Link
+      to={`/producto/${producto.id}`}
+      className="col-sm-12 col-md-5 col-lg-3 p-2"
+    >
       <div className="card ">
         <img
           src={producto.image}
@@ -16,20 +26,23 @@ function Item({ producto }) {
           <div>
             <h5 className="card-title">
               {producto.name.length > 50
-                ? producto.name.slice(0, 50) + '...'
+                ? producto.name.slice(0, 50) + "..."
                 : producto.name}
             </h5>
           </div>
           <div className="d-flex justify-content-between gap-2 mt-3 w-100 align-items-end">
             <p className="card-text ">${producto.price}</p>
-            <Button className="btn-carrito" >
+            <Button
+              className="btn-carrito"
+              onClick={() => buyProducts(producto)}
+            >
               <img src={carrito} alt="carrito" />
             </Button>
           </div>
         </div>
       </div>
     </Link>
-  )
+  );
 }
 
-export default Item
+export default Item;
