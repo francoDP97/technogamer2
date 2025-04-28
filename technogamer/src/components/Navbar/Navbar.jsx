@@ -31,20 +31,30 @@ function Navbar() {
             </nav>
 
             <BootstrapNavbar collapseOnSelect expand="lg" className="navabar">
+                <BootstrapNavbar.Toggle aria-controls="responsive-navbar-nav" />
                 <BootstrapNavbar.Brand>
                     <Nav.Link href="/" className="logo">
                         <img src={isotipo} alt="isotipo" />
                         <p>Technogamer</p>
                     </Nav.Link>
+                    <div className="visible-mobil">
+                        <div className="iconos">
+                            <button className="border-0 iconos" onClick={() => setModalType('buscador')}>
+                                <img src={lupa} alt="lupa_buscador" />
+                            </button>
+                        </div>
+                        <Nav.Link className="iconos" href="#redes">
+                            <img src={carrito} alt="carrito" />
+                        </Nav.Link>
+                    </div>
                 </BootstrapNavbar.Brand>
-                <BootstrapNavbar.Toggle aria-controls="responsive-navbar-nav" />
                 <BootstrapNavbar.Collapse className="navbar_enalace_iconos" id="responsive-navbar-nav">
                     <Nav className="enlaces">
                         <Nav.Link className="enlace" href="/productos">Productos</Nav.Link>
                         <Nav.Link className="enlace" href="/Error">Soporte</Nav.Link>
                         <Nav.Link className="enlace" href="/about">Nosotros</Nav.Link>
                     </Nav>
-                    <Nav className="align-items-center">
+                    <Nav className="align-items-center visible-pc">
                         <div className="iconos">
                             <button className="border-0 iconos" onClick={() => setModalType('buscador')}>
                                 <img src={lupa} alt="lupa_buscador" />

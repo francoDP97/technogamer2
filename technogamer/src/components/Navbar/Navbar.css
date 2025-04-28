@@ -16,6 +16,22 @@ p {
     padding: 1.3rem 2.5rem;
 }
 
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 87%;
+}
+
+.visible-mobil {
+    display: flex;
+
+}
+
+.visible-pc {
+    display: none;
+}
+
 nav .logo {
     display: flex;
     align-items: center;
@@ -51,6 +67,22 @@ nav .logo img {
         margin: auto;
         gap: 3.5rem;
     }
+}
+
+@media (min-width: 980px) {
+    .navbar-brand {
+        width: auto;
+    }
+
+    .visible-mobil {
+        display: none;
+
+    }
+
+    .visible-pc {
+        display: flex;
+    }
+
 }
 
 .enlaces .enlace {
