@@ -7,13 +7,15 @@ import instagram from '../../assets/img/redes/instagram.svg'
 import twitch from '../../assets/img/redes/twitch.svg'
 import youtube from '../../assets/img/redes/youtube.svg'
 import twitterx from '../../assets/img/redes/twitterx.svg'
+import Nav from 'react-bootstrap/Nav';
+import { Link } from 'react-router-dom';
 import './Footer.css'
 
 function Footer() {
     return (
         <>
             <footer>
-                <Row className='align-items- center '>
+                <Row className='align-items-center '>
                     <Col xs={12} md={4} >
                         <div className='logo'>
                             <img src={isotipo} alt="isotipo" />
@@ -30,18 +32,43 @@ function Footer() {
                     <Col xs={12} md={8}>
                         <ul className='enlaces'>
                             <li>
-                                <a href='#'>
-                                    Productos
-                                </a>
+                                <Nav.Link className="enlace" href="/productos">Productos</Nav.Link>
                                 <ul className='sub_enlaces'>
-                                    <li>Nuevos Productos</li>
-                                    <li>Más Vendidos</li>
-                                    <li>Combos</li>
-                                    <li>Cerficado</li>
+                                    <li>
+                                        <Link to="/productos" >Nuevos Productos</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/productos/Teclado" >Teclados</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/productos/Fuentes" >Fuentes</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/productos/Auriculares" >Auriculares</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/productos/Almacenamiento" >Almacenamiento</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="productos/Gabinetes" >Gabinetes</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/productos/Memorias" >Memorias</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="productos/Sillas" >Sillas</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/productos/Grafica" >Graficas</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/productos/Refrigeración" >Refrigeración</Link>
+                                    </li>
+
                                 </ul>
                             </li>
                             <li>
-                                <a href='#'>Soporte</a>
+                                <Nav.Link className="enlace" href="/Error">Soporte</Nav.Link>
                                 <ul className='sub_enlaces'>
                                     <li>Descargas</li>
                                     <li>Garantias</li>
@@ -49,7 +76,8 @@ function Footer() {
                                     <li>Envios/Devoluciones</li>
                                 </ul>
                             </li>
-                            <li><a href='#'>Nosotros</a>
+                            <li>
+                                <Nav.Link className="enlace" href="/about">Soporte</Nav.Link>
                                 <ul className='sub_enlaces'>
                                     <li>Ubicacion</li>
                                     <li>Historia</li>
@@ -58,8 +86,8 @@ function Footer() {
                             </li>
                         </ul>
                     </Col>
-                </Row>
-            </footer>
+                </Row >
+            </footer >
         </>
     )
 }

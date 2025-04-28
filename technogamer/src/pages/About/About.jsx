@@ -16,7 +16,7 @@ const equipo = [
 function About() {
   return (
     <div className="about2-container">
-      
+
       <section className="about2-frase">
         <h1>"Innovamos el futuro del gaming"</h1>
       </section>
@@ -51,7 +51,7 @@ function About() {
             </div>
           </div>
           <div className="about2-timeline-item">
-            <span className="about2-timeline-year">2026</span>
+            <span className="about2-timeline-year ultimo-año">2026</span>
             <div className="about2-timeline-content">
               <p>Expansión regional y comunidad de 10.000 miembros.</p>
             </div>

@@ -9,11 +9,34 @@ p {
 }
 
 .navabar {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     justify-content: space-between;
     background-color: #0D0D0D;
     padding: 1.3rem 2.5rem;
+}
+
+@media (min-width: 1500px) {
+    .navabar {
+        grid-template-columns: 1fr 6fr;
+    }
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.visible-mobil {
+    display: flex;
+
+}
+
+.visible-pc {
+    display: none;
 }
 
 nav .logo {
@@ -53,6 +76,22 @@ nav .logo img {
     }
 }
 
+@media (min-width: 980px) {
+    .navbar-brand {
+        width: auto;
+    }
+
+    .visible-mobil {
+        display: none;
+
+    }
+
+    .visible-pc {
+        display: flex;
+    }
+
+}
+
 .enlaces .enlace {
     gap: 1rem;
     padding: 0;
@@ -82,4 +121,24 @@ nav .logo img {
     width: 30px;
     height: auto;
 
+}
+
+.login_register {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #008CFF;
+    text-transform: uppercase;
+    font-family: 'Saira', sans-serif;
+    color: #F5F5F5;
+}
+
+.forlogin_forregister {
+    color: #F5F5F5;
+    text-transform: uppercase;
+    font-family: 'Saira', sans-serif;
+    border: none;
+    border-left: 1px solid #F5F5F5;
+    padding: 0 0.8rem;
 }
