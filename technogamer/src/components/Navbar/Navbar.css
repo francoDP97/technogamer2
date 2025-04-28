@@ -17,6 +17,12 @@ p {
     padding: 1.3rem 2.5rem;
 }
 
+@media (min-width: 1500px) {
+    .navabar {
+        grid-template-columns: 1fr 6fr;
+    }
+}
+
 .navbar-brand {
     display: flex;
     align-items: center;
