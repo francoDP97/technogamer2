@@ -1,0 +1,18 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.error>h2 {
+    color: #008CFF;
+    align-items: center;
+    font-family: "Saira", sans-serif;
+    font-weight: bold;
+}
+
+.error img {
+    margin: auto;
+    width: 24rem;
+    height: auto;
+}

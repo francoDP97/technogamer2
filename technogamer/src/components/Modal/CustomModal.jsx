@@ -1,19 +1,26 @@
-
 import Modal from 'react-bootstrap/Modal';
 
-function CustomModal({ contenido, ...props }) {
+function CustomModal({ contenido, cruz, visible, onHide, ...props }) {
     return (
         <Modal
             {...props}
-            size="lg" top
-            className='mt-5'
+            show={visible}     // <-- Controlar si se muestra
+            onHide={onHide}     // <-- Cerrar modal
+            size="lg"
+            centered
+            className="mt-5"
         >
-            <Modal.Body className='p-0'>
+            <Modal.Header closeButton className={cruz ? 'd-flex border border-0 ' : 'd-none'}  >
+                <Modal.Title
+                    id="contained-modal-title-vcenter"
+                >
+                </Modal.Title>
+            </Modal.Header>
+            <Modal.Body className="p-0">
                 {contenido}
             </Modal.Body>
         </Modal>
     );
 }
-
 
 export default CustomModal;

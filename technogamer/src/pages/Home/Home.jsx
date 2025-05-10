@@ -2,7 +2,7 @@ import React from "react";
 import Section from "./Section/Section";
 import SectionG from "./SectionG/SectionG";
 import Article from "./Article/Article";
-import './Homer.css';
+import './Home.css';
 function Homer() {
     return (
         <>
